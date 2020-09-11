@@ -1,7 +1,7 @@
 #include <stdio.h>
 
 
-float maior( float vetor[] , int tamanho ) {
+float maior( float *vetor , int tamanho ) {
   float maior = vetor[0];
   for (int i=1 ; i< tamanho;i++) {
     if (vetor[i]>maior) maior = vetor[i];
